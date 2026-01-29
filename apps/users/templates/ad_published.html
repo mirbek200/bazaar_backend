@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Common styles for both languages */
+        .email-container {
+            text-align: left;
+            width: 800px;
+            margin: 0 auto;
+            margin-bottom: 20px; /* Add margin between email blocks */
+        }
+
+        /* Russian Content */
+        .russian-content {
+            display: none; /* Initially hide Russian content */
+        }
+
+        /* English Content */
+        .english-content {
+            display: block; /* Initially show English content */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Russian Content -->
+<div class="email-container russian-content">
+    <p>Ваше объявление опубликовано.</p>
+    <p>Посмотрите объявление на сайте <a href="https://bazaarorigin.com/adv/{{ id }}">ТУТ ССЫЛКА НА ОБЪЯВЛЕНИЕ</a></p>
+    <p>Вы можете разместить ссылку на объявление в социальных сетях или отправить ее потенциальному покупателю.</p>
+    <h3>С уважением, Команда Bazaar.</h3>
+    <p>Не отвечайте на письмо — оно отправлено автоматически. Please do not reply to this email — it is sent automatically.</p>
+    <p>Вы получили это письмо, потому что являетесь пользователем Bazaar. You received this email because you are a user of Bazaar.</p>
+</div>
+
+<!-- English Content -->
+<div class="email-container english-content">
+    <h2>Your ad has been published</h2>
+    <p>Your ad has been published.</p>
+    <p>View your ad on the website <a href="https://bazaarorigin.com/adv/{{ id }}">HERE IS THE LINK TO YOUR AD</a></p>
+    <p>You can share the link to your ad on social networks or send it to potential buyers.</p>
+    <h3>Best regards, The Bazaar Team.</h3>
+    <p>Please do not reply to this email — it is sent automatically.</p>
+    <p>You received this email because you are a user of Bazaar.</p>
+</div>
+
+</body>
+</html>

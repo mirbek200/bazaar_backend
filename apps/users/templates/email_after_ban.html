@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Common styles for both languages */
+        .email-container {
+            text-align: left;
+            width: 800px;
+            margin: 0 auto;
+            margin-bottom: 20px; /* Add margin between email blocks */
+        }
+
+        /* Russian Content */
+        .russian-content {
+            display: none; /* Initially hide Russian content */
+        }
+
+        /* English Content */
+        .english-content {
+            display: block; /* Initially show English content */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Russian Content -->
+<div class="email-container russian-content">
+    <h2>Доступ к профилю ограничен</h2>
+    <p>Доступ к профилю ограничен</p>
+    <p>Были замечены признаки нарушений Правил сайта Bazaar. (<a href="https://bazaarorigin.com/bazaar/rules">ТУТ ССЫЛКА НА ПРАВИЛА</a>)</p>
+    <p>Если вы не согласны с ограничениями, напишите нам <a href="mailto:support@bazaarorigin.com">support@bazaarorigin.com</a>.</p>
+    <h3>С уважением,<br>Команда Bazaar.</h3>
+    <p>Не отвечайте на письмо — оно отправлено автоматически. Please do not reply to this email — it is sent automatically.</p>
+    <p>Вы получили это письмо, потому что являетесь пользователем Bazaar. You received this email because you are a user of Bazaar.</p>
+</div>
+
+<!-- English Content -->
+<div class="email-container english-content">
+    <h2>Access to Your Profile is Restricted</h2>
+    <p>Access to your profile has been restricted.</p>
+    <p>Signs of violations of the Bazaar site rules have been observed. (<a href="https://bazaarorigin.com/bazaar/rules">RULES LINK HERE</a>)</p>
+    <p>If you disagree with the restrictions, please contact us at <a href="mailto:support@bazaarorigin.com">support@bazaarorigin.com</a>.</p>
+    <h3>Best regards,<br>The Bazaar Team.</h3>
+    <p>Please do not reply to this email — it is sent automatically.</p>
+    <p>You received this email because you are a user of Bazaar.</p>
+</div>
+
+</body>
+</html>

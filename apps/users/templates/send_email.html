@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template</title>
+    <style>
+        /* Add your CSS styles here */
+    </style>
+</head>
+<body style="font-family: Arial, sans-serif;">
+
+<!-- Russian Content -->
+<div style="text-align: left;">
+    <div style="width: 800px; margin: 0 auto;">
+        <h2>Здравствуйте, {{ name }}!</h2>
+        <p>Теперь у вас есть личный кабинет на <a href="https://bazaarorigin.com/">https://bazaarorigin.com/</a>. Вы можете размещать объявления и связываться с другими продавцами.</p>
+        <p>Чтобы подтвердить регистрацию, введите код активации:</p>
+        <h3>{{ activation_code }}</h3>
+        <p>Если вы не регистрировались и не подавали объявления на <a href="https://bazaarorigin.com/">Bazaar Origin</a>, напишите нам на <a href="mailto:support@bazaarorigin.com">support@bazaarorigin.com</a>.</p>
+        <h3>С уважением,<br>Команда Bazaar.</h3>
+    </div>
+</div>
+
+<!-- English Content -->
+<div style="text-align: left;">
+    <div style="width: 800px; margin: 0 auto;">
+        <h2>Hello, {{ name }}!</h2>
+        <p>Now you have a personal account on <a href="https://bazaarorigin.com/">https://bazaarorigin.com/</a>. You can post ads and connect with other sellers.</p>
+        <p>To confirm your registration, enter the activation code:</p>
+        <h3>{{ activation_code }}</h3>
+        <p>If you did not register and did not post ads on <a href="https://bazaarorigin.com/">Bazaar Origin</a>, please write to us at <a href="mailto:support@bazaarorigin.com">support@bazaarorigin.com</a>.</p>
+        <h3>Best regards,<br>The Bazaar Team.</h3>
+    </div>
+</div>
+
+</body>
+</html>

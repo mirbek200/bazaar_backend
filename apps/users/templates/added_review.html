@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Common styles for both languages */
+        .email-container {
+            text-align: left;
+            width: 800px;
+            margin: 0 auto;
+            margin-bottom: 20px; /* Add margin between email blocks */
+        }
+
+        /* Russian Content */
+        .russian-content {
+            display: none; /* Initially hide Russian content */
+        }
+
+        /* English Content */
+        .english-content {
+            display: block; /* Initially show English content */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Russian Content -->
+<div class="email-container russian-content">
+    <p>Вам оставили отзыв на платформе Bazaar</p>
+    <p>Посмотрите его <a href="https://bazaarorigin.com/user/account">(ссылка на профиль человека, которому оставить отзыв)</a></p>
+    <h3>С уважением, Команда Bazaar.</h3>
+    <p>Не отвечайте на письмо — оно отправлено автоматически. Please do not reply to this email — it is sent automatically.</p>
+    <p>Вы получили это письмо, потому что являетесь пользователем Bazaar. You received this email because you are a user of Bazaar.</p>
+</div>
+
+<!-- English Content -->
+<div class="email-container english-content">
+    <h2>You have received a review on the Bazaar platform</h2>
+    <p>View it <a href="https://bazaarorigin.com/user/account">(link to the user's profile)</a></p>
+    <h3>Best regards, The Bazaar Team.</h3>
+    <p>Please do not reply to this email — it is sent automatically.</p>
+    <p>You received this email because you are a user of Bazaar.</p>
+</div>
+
+</body>
+</html>
