@@ -77,6 +77,7 @@ class ChangePasswordView(APIView):
 
 
 class ForgotPasswordSendActivationCodeView(APIView):
+    serializer_class = ForgotPasswordCompleteSerializer
     def post(self, request):
         data = request.data
         serializer = ForgotPasswordSerializer(data=data)
@@ -86,6 +87,7 @@ class ForgotPasswordSendActivationCodeView(APIView):
 
 
 class ForgotPasswordCompleteView(APIView):
+    serializer_class = ForgotPasswordCompleteSerializer
     def post(self, request):
         data = request.data
         serializer = ForgotPasswordCompleteSerializer(data=data)

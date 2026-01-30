@@ -35,7 +35,7 @@ ALLOWED_HOSTS = []
 
 AUTH_USER_MODEL = 'users.MyUser'
 
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Application definition
 
@@ -195,8 +195,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-EMAIL_HOST_PASSWORD = 'mknn ivoe unzc xajk'
-EMAIL_HOST_USER = 'no-reply@bazaarorigin.com'
+EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD")
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
@@ -204,13 +204,13 @@ EMAIL_PORT = 587
 GMAIL_ACCOUNTS = [
     {
         'EMAIL_BACKEND': 'django.core.mail.backends.smtp.EmailBackend',
-        'EMAIL_HOST_USER': 'no-reply@bazaarorigin.com',
-        'EMAIL_HOST_PASSWORD': 'mknn ivoe unzc xajk',
+        'EMAIL_HOST_USER': EMAIL_HOST_USER,
+        'EMAIL_HOST_PASSWORD': EMAIL_HOST_PASSWORD,
     },
     {
         'EMAIL_BACKEND': 'django.core.mail.backends.smtp.EmailBackend',
-        'EMAIL_HOST_USER': 'info@bazaarorigin.com',
-        'EMAIL_HOST_PASSWORD': 'yezt esho gtes zzdj',
+        'EMAIL_HOST_USER': EMAIL_HOST_USER,
+        'EMAIL_HOST_PASSWORD': EMAIL_HOST_PASSWORD,
     },
 ]
 

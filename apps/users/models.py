@@ -80,17 +80,6 @@ class MyUser(AbstractBaseUser, PermissionsMixin):
         self.activation_code = code
         self.save()
 
-    # def send_activation_email(self):
-    #     message = f"""
-    #            Благодарим Вас за регистрацию на нашем сайте.
-    #            Ваш код активации: {self.activation_code}
-    #            """
-    #     send_mail('Активация аккаунта',
-    #               message,
-    #               'test@gmail.com',
-    #               [self.email],
-    #               )
-
     def send_activation_email(self):
         subject = 'Пожалуйста, подтвердите регистрацию / Please, confirm your registration'
         from_email = 'test@gmail.com'

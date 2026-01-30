@@ -22,7 +22,7 @@ media
 
 # C extensions
 *.so
-
+.DS_Store
 # Distribution / packaging
 .Python
 build/
@@ -133,6 +133,7 @@ celerybeat.pid
 
 # Environments
 .env
+.env.dev
 .venv
 env/
 venv/
